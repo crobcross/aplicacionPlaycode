@@ -1,6 +1,18 @@
+
 .fondouser {
-	background-color:#1A315B; 
+	background-color:#15314D; 
 }
-.titulo {
-	font-family:40;
+
+.titulo2 {
+	color:#FFF;
+	font-family:Arial; 
+	font-size:25px;
+	padding-left:7%;    
+}
+.texto {
+	color: #F3EDC4;
+	font-style:bold font;
+	font-family:Arial;
+	padding-left:9%;
+	font-size: 20px   	
 }
