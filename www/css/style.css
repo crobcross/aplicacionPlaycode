@@ -22,7 +22,12 @@
 img {
 	border:solid black 5px;
 }
-
+img {
+  transition: all 0.5s ease;
+}
+img:hover {
+  transform: scale(0.9);
+}
 .fondostatus{
   background-color: #12475f;
   line-height: 1.6;
