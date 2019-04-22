@@ -6,7 +6,7 @@
 .titulo2 {
 	color:#FFF;
 	font-family:Arial; 
-	font-size:25px;
+	font-size:40px;
 	padding-left:7%;    
 }
 .texto {
@@ -19,20 +19,97 @@
 .fondochat {
 	background-color: #28467C;
 }
-img {
+span img {
 	border:solid black 5px;
 }
-img {
+span img {
   transition: all 0.5s ease;
 }
-img:hover {
+span img:hover {
   transform: scale(0.9);
-}
+} 
 .fondostatus{
   background-color: #12475f;
   line-height: 1.6;
   text-align: center;
 }
+/*Diseño de la imagen de datos/*/
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background:#262626;
+  overflow: hidden;
+}
+input, .toggle {
+  position: absolute;
+  padding: 0!important;
+  margin:0!important;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+  outline:  none;
+  z-index: 10; 
+}
+input {
+  opacity: 0;
+}
+.toggle {
+  pointer-events: none;
+  border-radius: 50%;
+  background: #FFF;
+  transition: 0.5s;
+  text-align: center;
+  line-height: 50px;
+  font-size: 36px;
+  box-shadow: 0 0 0 0px #F5F5B1;
+}
+input:checked ~ .toggle {
+  box-shadow: 0 0 0 500px #F5F5B1;
+  transform: rotate(255deg);
+
+}
+.imgBx,
+.details {
+   position: absolute;
+   top:0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+img {
+  width: 300px;
+  height: 400px;
+}
+.details {
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 11;
+  pointer-events: none; 
+  opacity: 0;
+}
+input:checked ~ .details {
+  opacity: 0;
+  transition-delay: 3s;
+  transition: 4s;
+  opacity: 1;
+}
+.details h1 {
+  margin:0;
+  padding: 0;
+  color: #000;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.datos {
+  color:#15314D;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size:20px;
+  text-transform: capitalize;
+}
+/**fin del diseño/*/
 h1 {
 	color:#FFF; 
 }
